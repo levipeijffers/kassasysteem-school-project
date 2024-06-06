@@ -1,0 +1,90 @@
+#calcu {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    width: 250px;
+    height: 300px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    top: 150px;
+}
+
+#calcu input[type="text"] {
+    width: calc(100% - 30px);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#calcu input[type="button"] {
+    width: calc(25% - 8px);
+    height: 60px;
+    padding: 0;
+    margin: 0 4px 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calcu #delButton,
+#calcu #equalsButton {
+    width: calc(50% - 6px);
+    margin-right: 0;
+}
+
+#print {
+    background-color: burlywood;
+    width: calc(100% - 30px);
+    height: 40px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#calcu #print:hover,
+#calcu input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+#winkelwagen button[name="remove_item"] {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    #calcu {
+        left: 10px;
+    }
+    #calcu input[type="button"] {
+        width: calc(33.33% - 6px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #calcu {
+        width: 200px;
+        left: 5px;
+    }
+    #calcu input[type="button"] {
+        width: calc(50% - 6px);
+    }
+}

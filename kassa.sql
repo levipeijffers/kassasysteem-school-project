@@ -1,4 +1,7 @@
-CREATE database kassasysteem
+
+CREATE DATABASE kassasysteem;
+
+USE kassasysteem;
 
 CREATE TABLE Producten (
     artikelnummer INT PRIMARY KEY,
@@ -49,11 +52,13 @@ VALUES
 (123490, 'Nibb-it sticks', 'Cheetos', 'Chips', '110g', 1.35, 5),
 (123491, 'Ontbijtkoek naturel gesneden', 'Peijnenburg', 'Koek', '485g', 1.75, 15);
 
+-- Create rol table
 CREATE TABLE rol (
     id INT AUTO_INCREMENT PRIMARY KEY,
     naam VARCHAR(255) NOT NULL
 );
 
+-- Create gebruiker table
 CREATE TABLE gebruiker (
     id INT AUTO_INCREMENT PRIMARY KEY,
     inlognaam VARCHAR(255) NOT NULL,
